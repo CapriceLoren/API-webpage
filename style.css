@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+
+body {
+  background-image: url(./img/bg.jpeg);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+li {
+  font-family: 'Allura', cursive;
+  animation: light 1.3s linear infinite;
+  font-size: 70px;
+}
+
+
+@-webkit-keyframes light {
+  0% {
+    color: #576574;
+    text-shadow: none;
+  }
+  90% {
+    color: f1c40f;
+    text-shadow: none;
+  }
+  100% {
+    color: #f1a60f;
+    text-shadow: 0 0 1rem #d35400, 0 0 7rem #d35400;
+  }
+}
+
+
+.centerDiv ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.centerDiv ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.centerDiv ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.centerDiv ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.centerDiv ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+h1 {
+  text-align: right;
+}
+
+.container {
+  margin: 0px 400px 90px 400px;
+  /* top right bottom left */
+  font-family: 'Bilbo', cursive;
+  font-size: 20px;
+
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+button {
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+  width: 100%;
+  font-family: 'Bilbo', cursive;
+  background-color: aliceblue;
+}
+
+button:hover {
+  opacity: 1;
+  background-color: rgb(129, 156, 148);
+  color: white;
+}
+
+/* .contentDiv {
+  display: flex;
+  justify-content: center;
+} */
+
+.content {
+  display: none;
+  background-color: aliceblue;
+  height: 300px;
+  padding: 20px;
+  /* opacity: 0.7; */
+}
+
+img {
+  width: auto;
+  height: 300px;
+  float: left;
+  padding: 10px;
+
+}
