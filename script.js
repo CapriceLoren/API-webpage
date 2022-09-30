@@ -63,3 +63,7 @@ function displayCharacter(character) {
   const firstName = character.name.split(" ")[0]
   document.querySelector(`#${firstName}`).innerHTML += htmlTemplate;
   };
+
+
+  // responsive design
+

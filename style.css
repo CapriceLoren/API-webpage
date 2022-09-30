@@ -14,6 +14,7 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  /* background-color: rgb(105,105,105, 0.3) */
 }
 
 li {
@@ -25,7 +26,7 @@ li {
 
 @-webkit-keyframes light {
   0% {
-    color: #576574;
+    color: #fff1d6;
     text-shadow: none;
   }
   90% {
@@ -100,7 +101,7 @@ button:hover {
 
 .content {
   display: none;
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.5);
   height: 300px;
   padding: 20px;
   opacity: 0.9;
@@ -114,5 +115,71 @@ img {
   height: 300px;
   float: left;
   padding-right: 10px;
+
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("./img/mediabg.jpeg");
+    background-size: cover;
+  }
+
+  /* ul {
+    display: none;
+   } */
+
+   li {
+    animation: none;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white
+   }
+
+   .container {
+      all:unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      font-family: Tahoma, sans-serif;
+   }
+
+   button {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    font-size: 15px;
+    width: 100%;
+    background-color: rgb(107, 1, 1, 0.5);
+    color: white;
+    font-family: Tahoma, sans-serif;
+   }
+
+   button:hover {
+    background-color: rgb(107, 1, 1);
+  }
+
+   .tabs {
+    flex-direction: column;
+    margin: 0;
+    width: 75%;
+   }
+
+   .content {
+    margin-top: 5px;
+    background-color: rgb(107, 1, 1, 0.5)
+   }
+
+   .contentDiv {
+    width: 75%;
+    height: fit-content;
+   }
+
+   img {
+    display: none;
+   }
 
 }
